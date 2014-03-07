@@ -46,3 +46,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+
+# Automatic ls after a cd
+
+function chpwd() {
+	emulate -L zsh
+	ls -al
+}
